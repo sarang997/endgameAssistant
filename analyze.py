@@ -1,49 +1,52 @@
 import chess.pgn
 
-def position_meets_criteria(board):
-    """
-    Check if the given position contains only kings, rooks, and pawns 
-    and has at least one king, one rook, and one pawn for both sides.
-    """
-    fen_parts = board.fen().split(' ')
-    piece_placement = fen_parts[0]  # Only take the piece placement part of the FEN
+# white_allowed_pieces = ['K', 'B', 'P', 'P', 'P']       # White can have King and Rook
+# black_allowed_pieces = ['k', 'n', 'p', 'p']  # Black can have King, Rook, and Pawn
 
-    # Check for any other pieces
-    if any(piece in piece_placement for piece in ['q', 'Q', 'b', 'B', 'n', 'N']):
-        return False
-
-    white_kings = piece_placement.count('K')
-    white_rooks = piece_placement.count('R')
-    white_pawns = piece_placement.count('P')
+def position_meets_criteria(board, white_allowed_pieces, black_allowed_pieces):
+    """
+    Check if the given position matches the exact allowed pieces (and their counts) for white and black.
     
-    black_kings = piece_placement.count('k')
-    black_rooks = piece_placement.count('r')
-    black_pawns = piece_placement.count('p')
+    Args:
+    - board (chess.Board): A board object from the python-chess library.
+    - white_allowed_pieces (list): List of allowed white pieces with exact counts.
+    - black_allowed_pieces (list): List of allowed black pieces with exact counts.
     
-    if (white_kings >= 1 and white_rooks >= 1 and white_pawns >= 1 and
-        black_kings >= 1 and black_rooks >= 1 and black_pawns >= 1):
-        return True
-
-    return False
-
-
-
-def analyze_game_for_position(game):
+    Returns:
+    - bool: True if the position meets the criteria, otherwise False.
     """
-    Analyze the game move-by-move. If any position in the game has only king, rook, and pawns for both sides,
-    print a green message along with the FEN of the position; 
+    # Counting pieces on the board
+    white_counts = {piece: list(board.piece_map().values()).count(chess.Piece.from_symbol(piece)) for piece in ['K', 'Q', 'R', 'B', 'N', 'P']}
+    black_counts = {piece: list(board.piece_map().values()).count(chess.Piece.from_symbol(piece.lower())) for piece in ['K', 'Q', 'R', 'B', 'N', 'P']}
+
+    # Checking counts against allowed pieces
+    for piece in ['K', 'Q', 'R', 'B', 'N', 'P']:
+        if white_counts[piece] != white_allowed_pieces.count(piece):
+            return False 
+        if black_counts[piece] != black_allowed_pieces.count(piece.lower()):
+            return False
+            
+    return True
+
+
+def analyze_game_for_position(game, white_allowed_pieces, black_allowed_pieces):
+    """
+    Analyze the game move-by-move based on allowed pieces criteria for white and black.
+    If any position in the game meets the criteria, print a green message along with the FEN of the position; 
     otherwise, print the URL of the game (from the "Site" tag).
     
     Args:
     - game (chess.pgn.Game): A game object from the python-chess library.
+    - white_allowed_pieces (list): List of allowed white pieces.
+    - black_allowed_pieces (list): List of allowed black pieces.
     """
     board = game.board()
 
     for move in game.mainline_moves():
         board.push(move)
-        if position_meets_criteria(board):
+        if position_meets_criteria(board, white_allowed_pieces, black_allowed_pieces):
             # Green message
-            print("\033[92mFound a position with only king, rook, and pawns for both sides.\033[0m")
+            print("\033[92mFound a position meeting the specified criteria.\033[0m")
             print("FEN of the position:", board.fen())
             return
 
@@ -52,9 +55,7 @@ def analyze_game_for_position(game):
     print("\033[91mGame does not meet the specified criteria. Game URL:\033[0m", game_url)
     print("\n" + "="*50 + "\n")
 
-
-
-def analyze_games_in_file(filename):
+def analyze_games_in_file(filename, white_allowed_pieces, black_allowed_pieces):
     """
     Iterate over each game in the PGN file and analyze it.
     
@@ -66,7 +67,7 @@ def analyze_games_in_file(filename):
             game = chess.pgn.read_game(pgn_file)
             if game is None:  # End of file
                 break
-            analyze_game_for_position(game)
+            analyze_game_for_position(game, white_allowed_pieces, black_allowed_pieces)
 
 # Example usage:
-analyze_games_in_file("games.pgn")
+# analyze_games_in_file("games.pgn", white_allowed_pieces, black_allowed_pieces)

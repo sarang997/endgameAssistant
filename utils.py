@@ -1,5 +1,8 @@
 import requests
 
+max_games = 10
+lichess_username = "DeadWater"
+
 def fetch_lichess_games(username, max_games=10, save_to_file=None):
     """
     Fetch recent games of a Lichess user and optionally save to a file.
@@ -58,5 +61,5 @@ def load_games_from_file(filename):
     return games
 
 # Example usage:
-games = fetch_lichess_games("DeadWater", max_games=5, save_to_file="games.pgn")
+# games = fetch_lichess_games(lichess_username, max_games=max_games, save_to_file="games.pgn")
 
