@@ -1,0 +1,100 @@
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/urQbAqkN"]
+[Date "2023.08.23"]
+[White "tintin98"]
+[Black "DeadWater"]
+[Result "1/2-1/2"]
+[UTCDate "2023.08.23"]
+[UTCTime "09:57:36"]
+[WhiteElo "1886"]
+[BlackElo "1859"]
+[WhiteRatingDiff "+0"]
+[BlackRatingDiff "+0"]
+[Variant "Standard"]
+[TimeControl "300+3"]
+[ECO "E70"]
+[Termination "Normal"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. f3 Nc6 7. Nge2 e5 8. d5 Ne7 9. Be3 a6 10. Qd2 Bd7 11. Bh6 Nh5 12. g4 Nf4 13. Bxf4 exf4 14. Qxf4 Be5 15. Qd2 b5 16. c5 dxc5 17. O-O-O c4 18. Bc2 b4 19. Nb1 b3 20. axb3 cxb3 21. Bxb3 Rb8 22. f4 Bg7 23. e5 Rxb3 24. Nd4 Rb7 25. h4 Bxg4 26. Rdg1 Bh5 27. f5 Qxd5 28. f6 Nc6 29. fxg7 Rd8 30. Nxc6 Qxd2+ 31. Nxd2 Rd3 32. Re1 Rb6 33. Ne7+ Kxg7 34. Nc4 Rb4 35. Re4 Bf3 36. Re3 Rxe3 37. Nxe3 Bxh1 38. N3d5 Bxd5 39. Nxd5 Rb5 40. Nxc7 Rxe5 41. Nxa6 Re4 42. b4 Rxh4 43. b5 Rh3 44. b6 Rb3 45. Nc5 Rxb6 46. Nd7 h5 47. Nxb6 f5 48. Nd5 g5 49. Kd2 f4 50. Ke2 Kg6 51. Kf2 Kf5 52. Kf3 g4+ 53. Kg2 Ke4 54. Nf6+ Ke3 55. Nxh5 f3+ 56. Kf1 Ke4 57. Nf6+ Kf5 58. Nxg4 Kxg4 59. Kf2 Kf4 60. Kf1 Ke3 61. Ke1 Kd3 62. Kf2 Ke4 63. Kf1 Ke3 64. Ke1 f2+ 65. Kf1 Kf3 1/2-1/2
+
+
+[Event "Rated Rapid game"]
+[Site "https://lichess.org/rLelkrKi"]
+[Date "2023.08.22"]
+[White "DeadWater"]
+[Black "allanjohn"]
+[Result "1/2-1/2"]
+[UTCDate "2023.08.22"]
+[UTCTime "14:30:00"]
+[WhiteElo "2022"]
+[BlackElo "2040"]
+[WhiteRatingDiff "+0"]
+[BlackRatingDiff "+0"]
+[Variant "Standard"]
+[TimeControl "900+10"]
+[ECO "E01"]
+[Termination "Normal"]
+
+1. d4 d5 2. c4 e6 3. g3 Nf6 4. Bg2 c5 5. cxd5 Nxd5 6. Nf3 cxd4 7. Nxd4 Bb4+ 8. Bd2 O-O 9. O-O Bxd2 10. Qxd2 Bd7 11. Nc3 Nxc3 12. Bxb7 Bc6 13. Bxa8 Nxe2+ 14. Qxe2 Bxa8 15. Rfd1 Qd5 16. f3 Nc6 17. Nxc6 Qxc6 18. Rac1 Qb6+ 19. Qf2 Qa5 20. a3 Bd5 21. Qd2 Qb6+ 22. Kg2 Qb7 23. Rc3 h6 24. Kf2 a5 25. Rd3 Rb8 26. Rxd5 Qxd5 27. Qxd5 exd5 28. Rxd5 Rxb2+ 29. Ke3 Rxh2 30. Rxa5 Ra2 31. Ra8+ Kh7 32. a4 g5 33. a5 Ra4 34. a6 Kg6 35. g4 Kf6 36. a7 Ra1 37. Kd4 Ra6 38. Kc5 Ra1 39. Kb6 Rb1+ 40. Kc7 Rc1+ 41. Kd8 Rd1+ 42. Ke8 Re1+ 43. Kf8 Ra1 44. Kg8 Ra3 45. Kh7 Ra6 46. Kxh6 Ra3 47. Rb8 Rxa7 48. Rb6+ Ke5 49. Rb5+ Ke6 50. Kxg5 Ra8 51. Rb6+ Ke7 52. Rb5 Ra6 53. f4 Ra1 54. Rb7+ Kf8 55. Kf6 Ra6+ 56. Kg5 Kg7 57. f5 Ra5 58. Rb4 Rc5 59. Kf4 Rc1 60. Rb6 f6 61. Rb4 Rf1+ 62. Ke4 Re1+ 63. Kd5 Re5+ 64. Kd6 Re1 65. Rb7+ Kh6 66. Re7 Rg1 67. Re4 Kg5 68. Ke6 Ra1 69. Rd4 Ra7 70. Rc4 Rb7 71. Re4 Ra7 72. Kd5 Ra6 73. Rc4 Ra5+ 74. Ke6 Ra6+ 75. Kd7 Ra7+ 76. Kc6 Re7 77. Kd6 Re1 78. Rd4 Re5 1/2-1/2
+
+
+[Event "Rated Rapid game"]
+[Site "https://lichess.org/j57u36KZ"]
+[Date "2023.08.22"]
+[White "KANWAL"]
+[Black "DeadWater"]
+[Result "0-1"]
+[UTCDate "2023.08.22"]
+[UTCTime "14:20:25"]
+[WhiteElo "2104"]
+[BlackElo "2011"]
+[WhiteRatingDiff "-7"]
+[BlackRatingDiff "+11"]
+[Variant "Standard"]
+[TimeControl "900+10"]
+[ECO "C00"]
+[Termination "Normal"]
+
+1. e4 e6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 Be7 6. d4 b6 7. c3 O-O 8. Bd3 Bb7 9. Bg5 Nbd7 10. O-O h6 11. Bxf6 Nxf6 12. Ne5 Nd7 13. f4 Nxe5 14. fxe5 f5 15. exf6 Rxf6 16. Rxf6 Bxf6 17. Be4 Bxe4 18. Nxe4 Qd5 19. Nxf6+ gxf6 20. Qh5 Qg5 21. Qxg5+ hxg5 22. Re1 Kf7 23. Kf2 Rh8 24. h3 Rd8 25. g4 Rd5 26. Kg3 c5 27. dxc5 Rxc5 28. Rd1 Ke7 29. h4 gxh4+ 30. Kxh4 Rb5 31. Rd2 Ra5 32. a3 Re5 33. Kg3 Re3+ 34. Kf4 Re5 35. b4 Re1 36. c4 Rc1 37. c5 bxc5 38. b5 0-1
+
+
+[Event "Rated Rapid game"]
+[Site "https://lichess.org/1u7SDSy8"]
+[Date "2023.08.22"]
+[White "DeadWater"]
+[Black "pilzi"]
+[Result "1-0"]
+[UTCDate "2023.08.22"]
+[UTCTime "13:58:46"]
+[WhiteElo "2001"]
+[BlackElo "2024"]
+[WhiteRatingDiff "+10"]
+[BlackRatingDiff "-6"]
+[Variant "Standard"]
+[TimeControl "900+10"]
+[ECO "D30"]
+[Termination "Normal"]
+
+1. d4 e6 2. c4 d5 3. g3 Be7 4. Bg2 b6 5. cxd5 exd5 6. Nf3 Bb7 7. O-O Nf6 8. Nc3 O-O 9. Bg5 Nbd7 10. Bxf6 Nxf6 11. Ne5 Bd6 12. Nf3 Re8 13. Rc1 c6 14. Qd2 Re7 15. Rfe1 a5 16. a3 b5 17. e3 b4 18. axb4 Bxb4 19. Qc2 Ba6 20. Ne5 Rc8 21. Nd3 Qd6 22. Nxb4 Qxb4 23. Na4 Bc4 24. Nc5 a4 25. Nxa4 Bb3 26. Qc5 Rb7 27. Qxb4 Rxb4 28. Nc5 Bc4 29. Rc2 Rcb8 30. b3 Bxb3 31. Nxb3 Rxb3 32. Rxc6 Kf8 33. Rec1 Rb1 34. Bf3 Rxc1+ 35. Rxc1 h5 36. Rc5 Rd8 37. h3 g5 38. g4 h4 39. Kf1 Ke7 40. Ke2 Kd6 41. Ra5 Rc8 42. Ra6+ Rc6 43. Ra7 Rc7 44. Rxc7 Kxc7 45. Kd3 Kc6 46. e4 dxe4+ 47. Bxe4+ Kd6 48. Ke3 Nd7 49. f4 f6 50. fxg5 fxg5 51. Bf5 Nf6 52. Be4 Ke6 53. Kd3 Kd6 54. Bh1 Nd7 55. Ke4 Ke6 56. d5+ Kf6 57. Bg2 Nc5+ 58. Kd4 Nd7 59. Bf1 Ne5 60. Be2 Nd7 61. Bb5 Ne5 62. d6 Ke6 63. d7 Nf7 64. Bc4+ 1-0
+
+
+[Event "Rated Rapid game"]
+[Site "https://lichess.org/xkOQNqFg"]
+[Date "2023.08.22"]
+[White "infection03"]
+[Black "DeadWater"]
+[Result "0-1"]
+[UTCDate "2023.08.22"]
+[UTCTime "09:30:16"]
+[WhiteElo "2063"]
+[BlackElo "1990"]
+[WhiteRatingDiff "-7"]
+[BlackRatingDiff "+11"]
+[Variant "Standard"]
+[TimeControl "900+10"]
+[ECO "C10"]
+[Termination "Normal"]
+
+1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Nf3 Nc6 7. Bb5 Qd7 8. O-O Bd6 9. Re1 a6 10. Bxc6 Qxc6 11. d5 Qd7 12. Nd4 e5 13. Qf3 Be7 14. Ne2 Qg4 15. Qxg4 Bxg4 16. Ng3 h5 17. h3 h4 18. hxg4 hxg3 19. fxg3 O-O-O 20. c4 Bc5+ 21. Be3 Bxe3+ 22. Rxe3 Rhg8 23. Re4 Rg6 24. Rf1 Rdg8 25. c5 Kd7 26. a3 b6 27. cxb6 cxb6 28. Rc4 b5 29. Rc6 Rxg4 30. Rcxf6 Rxg3 31. Rxf7+ Kd6 32. R1f2 Kxd5 33. R7f6 R8g6 34. Rxg6 Rxg6 35. Kf1 e4 36. Rd2+ Ke5 37. Re2 Kd4 38. Kf2 Rf6+ 39. Ke1 Kd3 40. Rd2+ Ke3 41. Re2+ Kd4 42. Rd2+ Ke5 43. Rf2 Rg6 44. Re2 Rg3 45. Kd2 Kd4 46. Ke1 a5 47. Rd2+ Ke5 48. Rc2 Kf4 49. Rf2+ Ke3 50. Re2+ Kd4 51. Rd2+ Kc4 52. Rc2+ Kb3 53. Re2 e3 54. Kf1 Kc4 55. Rc2+ Kd3 56. Rc3+ Kd2 57. Rc5 e2+ 58. Kf2 e1=Q# 0-1
+
+
