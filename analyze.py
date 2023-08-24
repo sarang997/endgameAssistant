@@ -80,11 +80,12 @@ def get_fen_of_desired_postion(filename, white_allowed_pieces, black_allowed_pie
     Args:
     - filename (str): The name of the PGN file containing the games.
     """
-    with open(filename, 'r') as pgn_file:
-        while True:
+    with open(filename, 'r', encoding='utf-8') as pgn_file:
+        for index, _ in enumerate(iter(lambda: chess.pgn.read_game(pgn_file), None)):
             game = chess.pgn.read_game(pgn_file)
             if game is None:  # End of file
                 break
+            print(f"Analyzing game number {index + 1}")
             analyze_game_for_position(game, white_allowed_pieces, black_allowed_pieces, output_filename)
 
 def save_fen_to_file(fen, filename):
@@ -95,7 +96,7 @@ def save_fen_to_file(fen, filename):
     - fen (str): The FEN string to save.
     - filename (str): The name of the file to save the FEN.
     """
-    with open(filename, 'a') as file:  # 'a' mode appends to the file
+    with open(filename, 'a', encoding='utf-8') as file:  # 'a' mode appends to the file
         # file.write(fen + '\n')  # Write the FEN followed by a newline
         file.write("\n" + json.dumps(fen))
 

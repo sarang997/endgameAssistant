@@ -1,8 +1,5 @@
 import requests
 
-max_games = 10
-lichess_username = "DeadWater"
-
 def fetch_lichess_games(username, max_games=10, save_to_file=None):
     """
     Fetch recent games of a Lichess user and optionally save to a file.
@@ -40,7 +37,7 @@ def save_games_to_file(games, filename):
     - games (list): List of games in PGN format.
     - filename (str): The name of the file to save the games.
     """
-    with open(filename, 'w') as file:
+    with open(filename, 'w', encoding='utf-8') as file:
         for game in games:
             file.write(game)
             file.write("\n\n\n")  # Separate games with three newlines
