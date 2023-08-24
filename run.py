@@ -5,11 +5,11 @@ import os
 max_games = 200
 lichess_username = "DeadWater"
 games_output_path = "games.pgn"
-fen_output_path = "fen.pgn"
+fen_output_path = "fen.txt"
 
 #define which type of endgame positions you want to get
 white_allowed_pieces = ['K', 'R', 'P', 'P']       # White can have King and Rook and 3 Pawns
-black_allowed_pieces = ['k', 'r', 'p']  # Black can have King, Rook, and 2 Pawns
+black_allowed_pieces = ['k','r','p','p', 'p']  # Black can have King, Rook, and 2 Pawns
 
 #save the games to a pgn file
 file_exists = os.path.exists(games_output_path)

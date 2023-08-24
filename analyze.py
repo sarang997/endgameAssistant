@@ -1,4 +1,6 @@
 import chess.pgn
+from game_analysis import analyze_fen_with_stockfish
+import json
 
 # white_allowed_pieces = ['K', 'B', 'P', 'P', 'P']       # White can have King and Rook
 # black_allowed_pieces = ['k', 'n', 'p', 'p']  # Black can have King, Rook, and Pawn
@@ -42,15 +44,22 @@ def analyze_game_for_position(game, white_allowed_pieces, black_allowed_pieces, 
     - output_filename (str): The name of the file to save FENs of positions meeting the criteria.
     """
     board = game.board()
-
+    final_metadata = {}
     for move in game.mainline_moves():
         board.push(move)
         if position_meets_criteria(board, white_allowed_pieces, black_allowed_pieces):
             # Save the FEN to the specified file
-            save_fen_to_file(board.fen(), output_filename)
+            final_metadata['FEN'] = board.fen()
             # Green message
             print("\033[92mFound a position meeting the specified criteria.\033[0m")
             print("FEN of the position:", board.fen())
+            score = analyze_fen_with_stockfish(board.fen(), 'stockfish-windows-x86-64-avx2 copy.exe')
+            final_metadata['score'] = score
+            save_fen_to_file(final_metadata, output_filename)
+            print("Engine Evaluation:", score)
+            print("metadata:", final_metadata)
+
+
             return
 
     # If no such position is found, print the game's URL in red
@@ -87,7 +96,8 @@ def save_fen_to_file(fen, filename):
     - filename (str): The name of the file to save the FEN.
     """
     with open(filename, 'a') as file:  # 'a' mode appends to the file
-        file.write(fen + '\n')  # Write the FEN followed by a newline
+        # file.write(fen + '\n')  # Write the FEN followed by a newline
+        file.write("\n" + json.dumps(fen))
 
 # Example usage:
 # get_fen_of_desired_postion("games.pgn", white_allowed_pieces, black_allowed_pieces)
