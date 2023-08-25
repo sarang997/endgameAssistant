@@ -30,3 +30,7 @@ After the script runs successfully, you will find a file named `fen.pgn` in the 
 ## Results
 
 Upon successful execution, you should see the desired endgame positions displayed on the terminal.
+
+## frontend
+dependencies- npm install chessboardjsx chess.js
+
