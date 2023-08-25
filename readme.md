@@ -28,6 +28,6 @@ After the script runs successfully, you will find a file named `fen.txt` in the 
 Upon successful execution, you should see the desired endgame positions displayed on the terminal.
 
 ## frontend widgets
-![image](https://github.com/sarang997/endgameAssistant/assets/41769830/32a602b0-2382-4137-a440-a41e9aca4aae)
+<img src="https://github.com/sarang997/endgameAssistant/assets/41769830/32a602b0-2382-4137-a440-a41e9aca4aae" width="400"/>
 
 
