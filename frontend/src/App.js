@@ -32,6 +32,8 @@ function App() {
     }
 
     const currentFen = fenData[currentIndex]?.FEN || '';
+    const activeColor = currentFen.split(' ')[1];
+    const orientation = activeColor === 'w' ? 'white' : 'black';
     const engineEval = fenData[currentIndex]?.score || '';
 
     return (
@@ -41,7 +43,7 @@ function App() {
                 <span style={{ marginLeft: '20px', fontSize: '16px', color: '#607d8b' }}>Engine Eval: {engineEval}</span>
             </div>
             <div style={{ width: '480px', background: '#fff', boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.2)', padding: '20px', borderRadius: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Chessboard position={currentFen} width={450} />
+                <Chessboard position={currentFen} width={450} orientation={orientation} />
                 <div style={{ display: 'flex', marginTop: '20px' }}>
                     <button onClick={previousBoard} style={{ padding: '10px 20px', fontSize: '24px', borderRadius: '5px', background: 'rgba(96, 125, 139, 0.8)', color: '#fff', border: 'none', cursor: 'pointer', marginRight: '10px' }}>←</button>
                     <button onClick={nextBoard} style={{ padding: '10px 20px', fontSize: '24px', borderRadius: '5px', background: 'rgba(96, 125, 139, 0.8)', color: '#fff', border: 'none', cursor: 'pointer' }}>→</button>
